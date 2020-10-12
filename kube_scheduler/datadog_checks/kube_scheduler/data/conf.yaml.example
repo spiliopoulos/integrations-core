@@ -73,10 +73,14 @@ instances:
 
     ## @param label_joins - mapping - optional
     ## Allows targeting a metric to retrieve its label with a 1:1 mapping.
+    ## Putting multiple values in `labels_to_match` works as an `AND` operator (all labels must match)
+    ## A ['*'] value in `labels_to_match` allows to apply retrieved labels to all timeseries (match all)
+    ## A ['*'] value in `labels_to_get` allows to retrieve all labels from timeserie
     #
     # label_joins:
     #   target_metric:
-    #     label_to_match: <MATCHED_LABEL>
+    #     labels_to_match:
+    #     - <MATCHED_LABEL_1>
     #     labels_to_get:
     #     - <EXTRA_LABEL_1>
     #     - <EXTRA_LABEL_2>
