@@ -118,6 +118,7 @@ instances:
     #   - tcmalloc
     #   - top
     #   - collection
+    #   - jumbo_metrics  # TODO: document the option
 
     ## @param collections - list of strings - optional
     ## Collect metrics on specific collections from the database specified

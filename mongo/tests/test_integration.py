@@ -29,7 +29,10 @@ def test_integration_mongos(instance_integration, aggregator, check):
     with mock_pymongo("mongos"):
         mongos_check.check(None)
 
-    _assert_metrics(aggregator, ['default', 'custom-queries', 'dbstats', 'indexes-stats', 'collection'])
+    _assert_metrics(
+        aggregator,
+        ['default', 'custom-queries', 'dbstats', 'indexes-stats', 'collection', 'connection-pool', 'jumbo', 'sessions'],
+    )
 
     aggregator.assert_all_metrics_covered()
     aggregator.assert_metrics_using_metadata(
