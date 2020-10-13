@@ -1,0 +1,27 @@
+name: SonarQube
+files:
+- name: sonarqube.yaml
+  options:
+  - template: init_config
+    options:
+    - template: init_config/jmx
+  - template: instances
+    options:
+    - template: instances/jmx
+  - template: logs
+    example:
+    - type: file
+      path: /opt/sonarqube/logs/access.log
+      source: sonarqube
+    - type: file
+      path: /opt/sonarqube/logs/ce.log
+      source: sonarqube
+    - type: file
+      path: /opt/sonarqube/logs/es.log
+      source: sonarqube
+    - type: file
+      path: /opt/sonarqube/logs/sonar.log
+      source: sonarqube
+    - type: file
+      path: /opt/sonarqube/logs/web.log
+      source: sonarqube
