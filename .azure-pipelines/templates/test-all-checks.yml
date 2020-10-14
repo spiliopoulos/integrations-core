@@ -50,7 +50,7 @@ jobs:
     - checkName: mongo
       displayName: Amazon Kafka
       os: linux
-      job_name: mongo11
+      job_name: mongo112
     - checkName: mongo
       displayName: Ambari
       os: linux
