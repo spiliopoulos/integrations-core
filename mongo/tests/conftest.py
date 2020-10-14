@@ -27,7 +27,7 @@ def dd_environment():
         conditions=[
             WaitFor(setup_sharding, args=(compose_file,), attempts=5, wait=5),
             InitializeDB(),
-            WaitFor(create_shard_user, attempts=20, wait=5),
+            WaitFor(create_shard_user, attempts=60, wait=5),
         ],
     ):
         yield common.INSTANCE_BASIC
