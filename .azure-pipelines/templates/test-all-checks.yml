@@ -7,438 +7,438 @@ jobs:
     pip_cache_config: ${{ parameters.pip_cache_config }}
     run_py2_tests: ${{ parameters.run_py2_tests }}
     checks:
-    - checkName: datadog_checks_base
+    - checkName: mongo
       displayName: Datadog Checks Base (Linux)
       os: linux
-    - checkName: datadog_checks_base
+    - checkName: mongo
       displayName: Datadog Checks Base (Windows)
       os: windows
-    - checkName: datadog_checks_dev
+    - checkName: mongo
       displayName: Datadog Checks Dev (Linux)
       os: linux
-    - checkName: datadog_checks_dev
+    - checkName: mongo
       displayName: Datadog Checks Dev (Windows)
       os: windows
-    - checkName: datadog_checks_downloader
+    - checkName: mongo
       displayName: Datadog Checks Downloader
       os: linux
-    - checkName: active_directory
+    - checkName: mongo
       displayName: Active Directory
       os: windows
-    - checkName: activemq
+    - checkName: mongo
       displayName: ActiveMQ
       os: linux
-    - checkName: activemq_xml
+    - checkName: mongo
       displayName: ActiveMQ XML
       os: linux
-    - checkName: aerospike
+    - checkName: mongo
       displayName: Aerospike
       os: linux
-    - checkName: airflow
+    - checkName: mongo
       displayName: Airflow
       os: linux
-    - checkName: amazon_msk
+    - checkName: mongo
       displayName: Amazon Kafka
       os: linux
-    - checkName: ambari
+    - checkName: mongo
       displayName: Ambari
       os: linux
-    - checkName: apache
+    - checkName: mongo
       displayName: Apache
       os: linux
-    - checkName: aspdotnet
+    - checkName: mongo
       displayName: ASP.NET
       os: windows
-    - checkName: btrfs
+    - checkName: mongo
       displayName: Btrfs
       os: linux
-    - checkName: cacti
+    - checkName: mongo
       displayName: Cacti
       os: linux
-    - checkName: cassandra
+    - checkName: mongo
       displayName: Cassandra
       os: linux
-    - checkName: cassandra_nodetool
+    - checkName: mongo
       displayName: Cassandra Nodetool
       os: linux
-    - checkName: ceph
+    - checkName: mongo
       displayName: Ceph
       os: linux
-    - checkName: cilium
+    - checkName: mongo
       displayName: Cilium
       os: linux
-    - checkName: cisco_aci
+    - checkName: mongo
       displayName: Cisco ACI
       os: linux
-    - checkName: clickhouse
+    - checkName: mongo
       displayName: ClickHouse
       os: linux
-    - checkName: cloud_foundry_api
+    - checkName: mongo
       displayName: Cloud Foundry API
       os: linux
-    - checkName: cockroachdb
+    - checkName: mongo
       displayName: CockroachDB
       os: linux
-    - checkName: confluent_platform
+    - checkName: mongo
       displayName: Confluent Platform
       os: linux
-    - checkName: consul
+    - checkName: mongo
       displayName: Consul
       os: linux
-    - checkName: coredns
+    - checkName: mongo
       displayName: CoreDNS
       os: linux
-    - checkName: couch
+    - checkName: mongo
       displayName: CouchDB
       os: linux
-    - checkName: couchbase
+    - checkName: mongo
       displayName: Couchbase
       os: linux
-    - checkName: crio
+    - checkName: mongo
       displayName: CRI-O
       os: linux
-    - checkName: directory
+    - checkName: mongo
       displayName: Directory
       os: linux
-    - checkName: disk
+    - checkName: mongo
       displayName: Disk (Linux)
       os: linux
-    - checkName: disk
+    - checkName: mongo
       displayName: Disk (Windows)
       os: windows
-    - checkName: dns_check
+    - checkName: mongo
       displayName: DNS (Linux)
       os: linux
-    - checkName: dns_check
+    - checkName: mongo
       displayName: DNS (Windows)
       os: windows
-    - checkName: dotnetclr
+    - checkName: mongo
       displayName: .NET CLR
       os: windows
-    - checkName: druid
+    - checkName: mongo
       displayName: Druid
       os: linux
-    - checkName: ecs_fargate
+    - checkName: mongo
       displayName: Amazon ECS Fargate
       os: linux
-    - checkName: eks_fargate
+    - checkName: mongo
       displayName: EKS Fargate
       os: linux
-    - checkName: elastic
+    - checkName: mongo
       displayName: Elasticsearch
       os: linux
-    - checkName: envoy
+    - checkName: mongo
       displayName: Envoy
       os: linux
-    - checkName: etcd
+    - checkName: mongo
       displayName: etcd
       os: linux
-    - checkName: exchange_server
+    - checkName: mongo
       displayName: Exchange Server
       os: windows
-    - checkName: external_dns
+    - checkName: mongo
       displayName: External DNS
       os: linux
-    - checkName: fluentd
+    - checkName: mongo
       displayName: fluentd
       os: linux
-    - checkName: gearmand
+    - checkName: mongo
       displayName: Gearman
       os: linux
-    - checkName: gitlab
+    - checkName: mongo
       displayName: Gitlab
       os: linux
-    - checkName: gitlab_runner
+    - checkName: mongo
       displayName: Gitlab Runner
       os: linux
-    - checkName: go_expvar
+    - checkName: mongo
       displayName: Go-Expvar
       os: linux
-    - checkName: gunicorn
+    - checkName: mongo
       displayName: Gunicorn
       os: linux
-    - checkName: haproxy
+    - checkName: mongo
       displayName: HAProxy
       os: linux
-    - checkName: harbor
+    - checkName: mongo
       displayName: Harbor
       os: linux
-    - checkName: hazelcast
+    - checkName: mongo
       displayName: Hazelcast
       os: linux
-    - checkName: hdfs_datanode
+    - checkName: mongo
       displayName: HDFS Datanode
       os: linux
-    - checkName: hdfs_namenode
+    - checkName: mongo
       displayName: HDFS Namenode
       os: linux
-    - checkName: hive
+    - checkName: mongo
       displayName: Hive
       os: linux
-    - checkName: hivemq
+    - checkName: mongo
       displayName: HiveMQ
       os: linux
-    - checkName: http_check
+    - checkName: mongo
       displayName: HTTP
       os: linux
-    - checkName: ibm_db2
+    - checkName: mongo
       displayName: IBM Db2
       os: linux
-    - checkName: ibm_mq
+    - checkName: mongo
       displayName: IBM MQ
       os: linux
-    - checkName: ibm_was
+    - checkName: mongo
       displayName: IBM WAS
       os: linux
-    - checkName: ignite
+    - checkName: mongo
       displayName: Ignite
       os: linux
-    - checkName: iis
+    - checkName: mongo
       displayName: IIS
       os: windows
-    - checkName: istio
+    - checkName: mongo
       displayName: Istio
       os: linux
-    - checkName: jboss_wildfly
+    - checkName: mongo
       displayName: JBoss/WildFly
       os: linux
-    - checkName: kafka
+    - checkName: mongo
       displayName: Kafka
       os: linux
-    - checkName: kafka_consumer
+    - checkName: mongo
       displayName: Kafka Consumer
       os: linux
-    - checkName: kong
+    - checkName: mongo
       displayName: Kong
       os: linux
-    - checkName: kube_apiserver_metrics
+    - checkName: mongo
       displayName: Kubernetes API server metrics
       os: linux
-    - checkName: kube_controller_manager
+    - checkName: mongo
       displayName: Kubernetes Controller Manager
       os: linux
-    - checkName: kube_dns
+    - checkName: mongo
       displayName: Kube DNS
       os: linux
-    - checkName: kube_metrics_server
+    - checkName: mongo
       displayName: Kube metrics server
       os: linux
-    - checkName: kube_proxy
+    - checkName: mongo
       displayName: Kube Proxy
       os: linux
-    - checkName: kube_scheduler
+    - checkName: mongo
       displayName: Kubernetes Scheduler
       os: linux
-    - checkName: kubelet
+    - checkName: mongo
       displayName: Kubelet
       os: linux
-    - checkName: kubernetes_state
+    - checkName: mongo
       displayName: Kubernetes State
       os: linux
-    - checkName: kyototycoon
+    - checkName: mongo
       displayName: Kyoto Tycoon
       os: linux
-    - checkName: lighttpd
+    - checkName: mongo
       displayName: Lighttpd
       os: linux
-    - checkName: linkerd
+    - checkName: mongo
       displayName: Linkerd
       os: linux
-    - checkName: linux_proc_extras
+    - checkName: mongo
       displayName: Linux proc extras
       os: linux
-    - checkName: mapr
+    - checkName: mongo
       displayName: MapR
       os: linux
-    - checkName: mapreduce
+    - checkName: mongo
       displayName: MapReduce
       os: linux
-    - checkName: marathon
+    - checkName: mongo
       displayName: Marathon
       os: linux
-    - checkName: marklogic
+    - checkName: mongo
       displayName: MarkLogic
       os: linux
-    - checkName: mcache
+    - checkName: mongo
       displayName: Memcached
       os: linux
-    - checkName: mesos_master
+    - checkName: mongo
       displayName: Mesos Master
       os: linux
-    - checkName: mesos_slave
+    - checkName: mongo
       displayName: Mesos Slave
       os: linux
     - checkName: mongo
       displayName: MongoDB
       os: linux
-    - checkName: mysql
+    - checkName: mongo
       displayName: MySQL
       os: linux
-    - checkName: nagios
+    - checkName: mongo
       displayName: Nagios
       os: linux
-    - checkName: network
+    - checkName: mongo
       displayName: Network
       os: linux
-    - checkName: nfsstat
+    - checkName: mongo
       displayName: NFSstat
       os: linux
-    - checkName: nginx
+    - checkName: mongo
       displayName: NGINX
       os: linux
-    - checkName: nginx_ingress_controller
+    - checkName: mongo
       displayName: NGINX Ingress Controller
       os: linux
-    - checkName: openldap
+    - checkName: mongo
       displayName: OpenLDAP
       os: linux
-    - checkName: openmetrics
+    - checkName: mongo
       displayName: OpenMetrics
       os: linux
-    - checkName: openstack
+    - checkName: mongo
       displayName: OpenStack
       os: linux
-    - checkName: openstack_controller
+    - checkName: mongo
       displayName: OpenStack Controller
       os: linux
-    - checkName: oracle
+    - checkName: mongo
       displayName: Oracle Database
       os: linux
-    - checkName: pdh_check
+    - checkName: mongo
       displayName: PDH
       os: windows
-    - checkName: pgbouncer
+    - checkName: mongo
       displayName: PGBouncer
       os: linux
-    - checkName: php_fpm
+    - checkName: mongo
       displayName: PHP-FPM
       os: linux
-    - checkName: postfix
+    - checkName: mongo
       displayName: Postfix
       os: linux
-    - checkName: postgres
+    - checkName: mongo
       displayName: Postgres
       os: linux
-    - checkName: powerdns_recursor
+    - checkName: mongo
       displayName: PowerDNS Recursor
       os: linux
-    - checkName: presto
+    - checkName: mongo
       displayName: Presto
       os: linux
-    - checkName: process
+    - checkName: mongo
       displayName: Process
       os: linux
-    - checkName: prometheus
+    - checkName: mongo
       displayName: Prometheus
       os: linux
-    - checkName: proxysql
+    - checkName: mongo
       displayName: ProxySQL
       os: linux
-    - checkName: rabbitmq
+    - checkName: mongo
       displayName: RabbitMQ
       os: linux
-    - checkName: redisdb
+    - checkName: mongo
       displayName: Redis
       os: linux
-    - checkName: rethinkdb
+    - checkName: mongo
       displayName: RethinkDB
       os: linux
-    - checkName: riak
+    - checkName: mongo
       displayName: Riak
       os: linux
-    - checkName: riakcs
+    - checkName: mongo
       displayName: Riak CS
       os: linux
-    - checkName: sap_hana
+    - checkName: mongo
       displayName: SAP HANA
       os: linux
-    - checkName: scylla
+    - checkName: mongo
       displayName: Scylla
       os: linux
-    - checkName: snmp
+    - checkName: mongo
       displayName: SNMP
       os: linux
-    - checkName: snowflake
+    - checkName: mongo
       displayName: Snowflake
       os: linux
-    - checkName: solr
+    - checkName: mongo
       displayName: Solr
       os: linux
-    - checkName: spark
+    - checkName: mongo
       displayName: Spark
       os: linux
-    - checkName: sqlserver
+    - checkName: mongo
       displayName: SQL Server (Linux)
       os: linux
-    - checkName: sqlserver
+    - checkName: mongo
       displayName: SQL Server (Windows)
       os: windows
-    - checkName: squid
+    - checkName: mongo
       displayName: Squid
       os: linux
-    - checkName: ssh_check
+    - checkName: mongo
       displayName: SSH
       os: linux
-    - checkName: statsd
+    - checkName: mongo
       displayName: StatsD
       os: linux
-    - checkName: supervisord
+    - checkName: mongo
       displayName: Supervisord
       os: linux
-    - checkName: system_core
+    - checkName: mongo
       displayName: System Core
       os: linux
-    - checkName: system_swap
+    - checkName: mongo
       displayName: System Swap
       os: linux
-    - checkName: tcp_check
+    - checkName: mongo
       displayName: TCP (Linux)
       os: linux
-    - checkName: tcp_check
+    - checkName: mongo
       displayName: TCP (Windows)
       os: windows
-    - checkName: teamcity
+    - checkName: mongo
       displayName: TeamCity
       os: linux
-    - checkName: tls
+    - checkName: mongo
       displayName: TLS
       os: linux
-    - checkName: tokumx
+    - checkName: mongo
       displayName: TokuMX
       os: linux
-    - checkName: tomcat
+    - checkName: mongo
       displayName: Tomcat
       os: linux
-    - checkName: twemproxy
+    - checkName: mongo
       displayName: Twemproxy
       os: linux
-    - checkName: twistlock
+    - checkName: mongo
       displayName: Twistlock
       os: linux
-    - checkName: varnish
+    - checkName: mongo
       displayName: Varnish
       os: linux
-    - checkName: vault
+    - checkName: mongo
       displayName: Vault
       os: linux
-    - checkName: vertica
+    - checkName: mongo
       displayName: Vertica
       os: linux
-    - checkName: vsphere
+    - checkName: mongo
       displayName: vSphere
       os: linux
-    - checkName: win32_event_log
+    - checkName: mongo
       displayName: Win32 Event Log
       os: windows
-    - checkName: windows_service
+    - checkName: mongo
       displayName: Windows Service
       os: windows
-    - checkName: wmi_check
+    - checkName: mongo
       displayName: WMI
       os: windows
-    - checkName: yarn
+    - checkName: mongo
       displayName: Yarn
       os: linux
-    - checkName: zk
+    - checkName: mongo
       displayName: ZooKeeper
       os: linux

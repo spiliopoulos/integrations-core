@@ -23,7 +23,7 @@ def dd_environment():
     compose_file = os.path.join(common.HERE, 'compose', 'docker-compose.yml')
 
     with docker_run(
-        compose_file, conditions=[WaitFor(setup_sharding, args=(compose_file,), attempts=5, wait=5), InitializeDB()]
+        compose_file, conditions=[WaitFor(setup_sharding, args=(compose_file,), attempts=5, wait=5), InitializeDB(), WaitFor(create_shard_user, attempts=20, wait=5)]
     ):
         yield common.INSTANCE_BASIC
 
@@ -142,7 +142,7 @@ def setup_sharding(compose_file):
     for i, (service, command) in enumerate(service_commands, 1):
         # Wait before router init
         if i == len(service_commands):
-            time.sleep(30)
+            time.sleep(10)
 
         run_command(['docker-compose', '-f', compose_file, 'exec', '-T', service, 'sh', '-c', command], check=True)
 
@@ -183,6 +183,9 @@ class InitializeDB(LazyFunction):
         auth_db.command("createUser", 'special test user', pwd='s3\\kr@t', roles=[{'role': 'read', 'db': 'test'}])
 
         db.command("createUser", 'testUser2', pwd='testPass2', roles=[{'role': 'read', 'db': 'test'}])
+
+
+def create_shard_user():
         cli_shard = pymongo.mongo_client.MongoClient(
             common.SHARD_SERVER, socketTimeoutMS=30000, read_preference=pymongo.ReadPreference.PRIMARY_PREFERRED
         )
